@@ -2,3 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+body {
+  margin: 5vw;
+  text-align: center;
+  font-family: arial, sans-serif; }
+  body label,
+  body input {
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px; }
+  body div {
+    border: 2px solid black;
+    font-size: 40px;
+    margin: 20px; }

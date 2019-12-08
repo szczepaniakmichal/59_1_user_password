@@ -17,10 +17,7 @@ const messages = ["super", "działa!", 'wow!'];
 const showMessage = (e) => {
     div.textContent = '';
     const value = e.target.value.toLowerCase();
-
-
     pass.forEach((password, index) => {
-        console.log(password);
         if (value === password) {
             div.textContent = messages[index];
         }
