@@ -5,13 +5,22 @@
 const input = document.querySelector("input");
 const div = document.querySelector('div');
 
-const passwords = ['jE', 'dw'];
-const messages = ["super", "działa!"];
+const passwords = ['jE', 'dw', 'TR'];
+const passwordToLowerCase = passwords.values();
+let pass = [];
+for (const val of passwordToLowerCase) {
+    pass.push(val.toLowerCase());
+}
+
+const messages = ["super", "działa!", 'wow!'];
 
 const showMessage = (e) => {
     div.textContent = '';
-    const value = e.target.value;
-    passwords.forEach((password, index) => {
+    const value = e.target.value.toLowerCase();
+
+
+    pass.forEach((password, index) => {
+        console.log(password);
         if (value === password) {
             div.textContent = messages[index];
         }
