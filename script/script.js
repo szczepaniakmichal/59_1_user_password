@@ -4,14 +4,16 @@
 
 const input = document.querySelector("input");
 const div = document.querySelector('div');
-const passwords = ['je', 'dw'];
+
+const passwords = ['jE', 'dw'];
 const messages = ["super", "działa!"];
 
 const showMessage = (e) => {
+    div.textContent = '';
     const value = e.target.value;
-    passwords.forEach((pass, index) => {
-        if (value === pass) {
-
+    passwords.forEach((password, index) => {
+        if (value === password) {
+            div.textContent = messages[index];
         }
     })
 };
